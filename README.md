@@ -11,13 +11,13 @@
    
 4. Тест случаи според критериумот Every statement
    
-| Тест случај | `item.getPrice() > 300` | 
+| `Тест случај` | `item.getPrice() > 300` | `item.getDiscount() > 0` | `item.getBarcode().charAt(0) == '0'` |
 | --- | --- | --- | --- |
-| 1 | false |
-| 2 | false |
-| 3 | false |
-| 4 | false |
-| 5 | true |
-| 6 | true |
-| 7 | true |
-| 8 | true |
+| 1 | false | false | false |
+| 2 | false | false | true |
+| 3 | false | true | false |
+| 4 | false | true | true |
+| 5 | true | false | false |
+| 6 | true | false | true |
+| 7 | true | true | false |
+| 8 | true | true | true |
