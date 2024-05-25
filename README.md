@@ -2,14 +2,15 @@
 ---------------------------------------------------
 **Димитар Гештаковски, бр. на индекс 225053**
 
-2. Control Flow Graph
+2. **Control Flow Graph**
 
    ![Untitled Diagram drawio](https://github.com/DimeBlyat/SI_2024_lab2_225053/assets/150610538/1766182e-5842-4d1f-b3a9-44a3a0dc55fd)
 
-3. Цикломатска комплексност
+3. **Цикломатска комплексност**
+
 Цикломатската комплексност на овој код е 10, истата ја добив преку формулата P+1, каде што P е бројот на предикатни јазли. Во случајoв P=9, па цикломатската комплексност изнесува 10.
    
-4. Тест случаи според Every Branch критериумот
+4. **Тест случаи според Every Branch критериумот**
 
 | `Тест случај` | `allItems == null` | `item.getName() == null / item.getName().length() == 0` | `item.getBarcode() != null` | `allowed.indexOf(c) == -1` | `item.getDiscount() > 0` | `item.getBarcode().charAt(0) == '0'` | `item.getPrice() > 300 && item.getDiscount() > 0 && item.getBarcode().charAt(0) == '0'` | `sum <= payment` | `allItems список` | `payment` | `Очекуван резултат` | `Објаснување` |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -22,7 +23,7 @@
 | 7 | false | false / false | true | false | true | true | true | true | [new Item("item", "012345", 400, 0.1f)] | 100 | true | Сите услови се исполнети, цената е над 300, предметот има попуст и баркодот почнува со '0'. |
 | 8 | false | false / false | true | false | true | true | true | false | [new Item("item", "012345", 400, 0.1f)] | 50 | false | Сите услови се исполнети, цената е над 300, предметот има попуст и баркодот почнува со '0', но уплатата е помала од сумата. |
 
-5. Тест случаи според Multiple Condition критериумот
+5. **Тест случаи според Multiple Condition критериумот**
    
 | `Тест случај` | `item.getPrice() > 300` | `item.getDiscount() > 0` | `item.getBarcode().charAt(0) == '0'` | `allItems список` | `payment` | `Очекуван резултат` | `Објаснување` |
 | --- | --- | --- | --- | --- | --- | --- | --- |
